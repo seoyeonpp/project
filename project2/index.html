@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="박서연">
+    <meta name="description" content="서울상상나라 홈페이지 입니다.">
+    <meta name="keyword" content="웹표준, 웹접근성, 어린이박물관, 서울상상나라, 어린이미술관">
+    <meta name="generator" content="visual studio code">
+    <meta property="og:title" content="웹접근성,SEO를 준수한 사이트입니다.">
+    <meta property="og:url" content="http://syparkk.dothome.co.kr/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/main_banner6.png">
+    <meta property="og:site_name" content="서울상상나라">
+    <meta property="og:description" content="서울상상나라 홈페이지 입니다.">
+    <title>서울상상나라</title>
+    <!-- webfont -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div id="gnb">
+                <div class="container cf">
+                    <ul>
+                        <li class="fl"><a href="#"><span>로그인</span></a></li>
+                        <li class="fl"><a href="#"><span>회원가입</span></a></li>
+                        <li class="fl"><a href="#"><span>Language</span></a>
+                            <ul class="languageBox">
+                                <li><a href="#">korean</a></li>
+                                <li><a href="#">english</a></li>
+                                <li><a href="#">chinese</a></li>
+                                <li><a href="#">japanese</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="lnb">
+                <div class="container cf">
+                    <div id="logo" class="fl"><a href="#"><img src="img/logo.png" alt="로고"></a></div>
+                    <div class="lnb_right">
+                        <div class="sns fl">
+                            <ul>
+                                <li class="fl"><a href="#"><img src="img/i_sang.png" alt="인스타그램"></a></li>
+                                <li class="fl"><a href="#"><img src="img/f_sang.png" alt="페이스북"></a></li>
+                                <li class="fl"><a href="#"><img src="img/y_sang.png" alt="유튜브"></a></li>
+                                <li class="fl"><a href="#"><img src="img/b_sang.png" alt="블로그"></a></li>
+                            </ul>
+                        </div>
+                        <div class="site_map fl">
+                            <button>
+                                <img src="img/btn_gnb.png" alt="site_map">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- //#header -->
+        <div id="section">
+            <div class="container cf">
+                <div id="main_visual_wrap">
+                    <div class="main_visual swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/main_banner1.png" alt="서울상상나라 재개관 안내"></div>
+                            <div class="swiper-slide"><img src="img/main_banner2.png" alt="신규전시 과학놀이 안내">
+                                <div class="text">
+                                    <p>신규전시 | 3층 과학놀이</p>
+                                    <h3>물과 바람의<br>다양한<br>흐름을 느껴요!</h3>
+                                    <div class="main_more"><a href="#">자세히보기</a><span></span></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="img/main_banner3.png" alt="어린이 큐레이터 모집안내"></div>
+                            <div class="swiper-slide"><img src="img/main_banner4.jpg" alt="신규전시 나의 소리세상 안내">
+                                <div class="text">
+                                    <p>신규전시 | 지하 1층 감성놀이</p>
+                                    <h3>나의 소리 세상</h3>
+                                    <div class="main_more"><a href="#">자세히보기</a><span></span></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="img/main_banner5.png" alt="상상나라 방탄 큐레이터 안내"></div>
+                            <div class="swiper-slide"><img src="img/main_banner6.png" alt="서울 상상나라 전경"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="btn_wrap">
+                            <a class=".main_visual_prev swiper-button-prev"></a>
+                            <a class=".main_visual_next swiper-button-next"></a>
+                        </div>
+                    </div>
+                    <div id="news" class="swiper-container news">
+                        <p><strong>새소식</strong></p>
+                        <div class="news_wrapper swiper-wrapper">
+                            <div class="swiper-slide news-slide">
+                                <p><a href="#">서울상상나라 재개관 관람 안내(재개관 일자 2021.1.21.목요일~)</a></p>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <p><a href="#">2021년 서울상상나라 '상상나라극장' 위탁운영 용역 공고</a></p>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <p><a href="#">3층 과학놀이 영역 물놀이 전시  제한적 이용 안내(2021.1.23.토~)</a></p>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <p><a href="#">서울상상나라(어린이대공원주차장)만차 시 인근 주차장 안내</a></p>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <p><a href="#">제 8기 어린이 큐레이터 모집 안내(4.20.~5.17)</a></p>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <p><a href="#">서울시장 보궐선거일(4월 7일 수요일) 정상 개관 안내</a></p>
+                            </div>
+                        </div>
+                        <div class="btn_wrap">
+                            <a href="#" class="btn_up swiper-button-prev"></a>
+                            <a href="#" class="btn_down swiper-button-next"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="article1">
+                    <div class="main_section cf">
+                        <div class="info fl">
+                            <ul>
+                                <li><h3>관람안내<a href="#"><img src="img/btn_more.png" alt="더보기" class="fr"></a></h3></li>
+                                <li><span>관람시간</span><strong>오전 10시-오후 6시</strong>(입장마감:오후5시)</li>
+                                <li><span>휴관일</span>매주 월요일,1월1일,설/추석연휴,보수기간</li>
+                            </ul>
+                        </div>
+                        <div class="info_wrap fl">
+                            <ul>
+                                <li class="fl"><a href="#">개인예약<img src="img/main_section1_icon1.png" alt="개인예약"></a></li>
+                                <li class="fl"><a href="#">단체예약<img src="img/main_section1_icon2.png" alt="단체예약"></a></li>
+                                <li class="fl"><a href="#">교육예약<img src="img/main_section1_icon3.png" alt="교육예약"></a></li>
+                                <li class="fl"><a href="#">오시는길<img src="img/main_section1_icon4.png" alt="오시는길"></a></li>
+                            </ul>
+                        </div>
+                    </div><!-- //.main_section -->
+                </div><!-- //#article1 -->
+                <div id="article2">
+                    <div class="main_section">
+                        <h3>온라인 서울상상나라<a href="#"><img src="img/btn_plus.png" alt="더보기"></a></h3>
+                        <div class="swiper-container sns_container">
+                            <div class="swiper-wrapper sns_wrapper">
+                                <div class="swiper-slide sns_slide">
+                                    <a href="#">
+                                        <p><img src="img/sns_1.jpg" width="264" height="184" alt="냠냠!요리놀이 우유팩 푸딩"></p>
+                                        <div class="text">
+                                            <p>상상놀이본부:냠냠!요리놀이 우유팩 푸딩</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide sns_slide">
+                                    <a href="#">
+                                        <p><img src="img/sns_2.jpg" width="264" height="184" alt="휴지?!놀이로 풀다!"></p>
+                                        <div class="text">
+                                            <p>상상놀이본부:데구루루 휴지놀이</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide sns_slide">
+                                    <a href="#">
+                                        <p><img src="img/sns_3.jpg" width="264" height="184" alt="서울상상나라 꿀팁 대공개!"></p>
+                                        <div class="text">
+                                            <p>서울상상나라 관람 꿀팁!<br>입장,편의시설,주차</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide sns_slide">
+                                    <a href="#">
+                                        <p><img src="img/sns_4.png" width="264" height="184" alt="상상방탄큐레이터 상상극장"></p>
+                                        <div class="text">
+                                            <p>상상방탄큐레이터:과학놀이 전시 기획과정 번외편</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide sns_slide">
+                                    <a href="#">
+                                        <p><img src="img/sns_5.png" width="264" height="184" alt="상상방탄큐레이터 상상극장 디자이너편"></p>
+                                        <div class="text">
+                                            <p>상상방탄큐레이터:과학놀이 전시 기획과정 디자이너편</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide sns_slide">
+                                    <a href="#">
+                                        <p><img src="img/sns_6.png" width="264" height="184" alt="랜선서울상상나라 관람기 1화"></p>
+                                        <div class="text">
+                                            <p>랜선 서울상상나라 관람기 1화(지하1층~1층)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide sns_slide">
+                                    <a href="#">
+                                        <p><img src="img/sns_7.png" width="264" height="184" alt="랜선서울상상나라 관람기 2화"></p>
+                                        <div class="text">
+                                            <p>랜선 서울상상나라 관람기 2화(2층~3층)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href=""></a><a href="#"></a><button></button>
+                </div><!-- //article2 -->
+                <div id="article3">
+                    <div class="main_section">
+                        <h3>전시<a href="#"><img src="img/btn_plus.png" alt="더보기"></a></h3>
+                        <div class="exhibition_container swiper-container">
+                            <div class="exhibition_wrapper swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/main_display_img1.png" alt="물과 바람의 다양한흐름 전시안내">
+                                    <div class="text">
+                                        <p>3층 과학놀이</p>
+                                        <strong>물과 바람의<br>다양한 흐름</strong>
+                                        <div class="more"><a href="#">자세히보기</a><span></span></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"><img src="img/main_display_img2.png" alt="나의 소리 세상 전시안내">
+                                    <div class="text">
+                                        <p>지하1층 감성놀이</p>
+                                        <strong>나의 소리 세상</strong>
+                                        <div class="more"><a href="#">자세히보기</a><span></span></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"><img src="img/main_display_img3.png" alt="띠리띠리 컴퓨터 세상 전시안내">
+                                    <div class="text">
+                                        <p>1층 기획전시</p>
+                                        <strong>띠리띠리 컴퓨터 세상</strong>
+                                        <div class="more"><a href="#">자세히보기</a><span></span></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"><img src="img/main_display_img4.png" alt="별별 동물 퍼즐 전시안내">
+                                    <div class="text">
+                                        <p>1층 자연놀이</p>
+                                        <strong>별별 동물 퍼즐</strong>
+                                        <div class="more"><a href="#">자세히보기</a><span></span></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"><img src="img/main_display_img5.png" alt="이상한 예술골목 전시안내">
+                                    <div class="text">
+                                        <p>1층 예술놀이,공간놀이</p>
+                                        <strong>이상한 예술골목</strong>
+                                        <div class="more"><a href="#">자세히보기</a><span></span></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"><img src="img/main_display_img6.png" alt="영유아 놀이공간 안내">
+                                    <div class="text">
+                                        <p>2층 아기놀이터</p>
+                                        <strong>36개월 미만 영유아를 위한<br>놀이공간</strong>
+                                        <div class="more"><a href="#">자세히보기</a><span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=".swiper-pagination exhibition-pagination"></div>
+                        </div>
+                    </div>
+                </div><!-- //article3 -->
+                <div id="article4"> 
+                    <div class="main_section cf">
+                        <h3>교육<a href="#"><img src="img/btn_plus.png" alt="더보기"></a></h3>
+                        <div class="edu_contents">
+                            <div class="fl">TAG</div>
+                            <ul class="cf tab_menu">
+                                <li class="fl on"><a href="#">유아</a>
+                                    <div class="flex">
+                                        <ul class="first">
+                                            <a href="#">
+                                                <li><img src="img/1-1_thumb.png" width="330" alt="알록달록 빛의 집 교육안내"></li>
+                                                <li class="sub_tit"><em>심화교육</em><strong>알록달록 빛의 집(온라인)</strong></li>
+                                                <li><em>대상</em><span>6세 ~ 8세 어린이(2014년 ~ 2016년생)와 보호자 1인</span></li>
+                                                <li><em>장소</em><span>실시간 온라인(ZOOM)</span></li>
+                                                <li><em>일시</em><span>오후 1시 30분 (40분)<br>오후 3시 (40분)</span></li>
+                                                <li><em>참가비</em><span>12,000원</span></li>
+                                            </a>
+                                        </ul>
+                                        <ul class="second">
+                                            <a href="#">
+                                                <li><img src="img/1-2_thumb.jpg" width="330" alt="고슴도치 빵 만들기 체험교실"></li>
+                                                <li class="sub_tit"><em>가족요리</em><strong>고슴도치 빵</strong></li>
+                                                <li><em>대상</em><span>4세 이상 어린이와 보호자 1인</span></li>
+                                                <li><em>장소</em><span>지하 1층 요리놀이실</span></li>
+                                                <li><em>일시</em><span>4월 주말, 오후 2시<br>* 현장 접수</span></li>
+                                                <li><em>참가비</em><span>12,000원</span></li>
+                                            </a>
+                                        </ul>
+                                        <ul class="third">
+                                            <a href="#">
+                                                <li><img src="img/1-3_thumb.jpg" width="330" alt="케사디야 나비만들기 요리교실"></li>
+                                                <li class="sub_tit"><em>오감요리</em><strong>케사디야 나비</strong></li>
+                                                <li><em>대상</em><span>5세 이상</span></li>
+                                                <li><em>장소</em><span>지하 1층 요리놀이실</span></li>
+                                                <li><em>일시</em><span>4월 주말, 낮 12시<br>*현장 접수</span></li>
+                                                <li><em>참가비</em><span>10,000원</span></li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="fl"><a href="#">주말</a>
+                                    <div class="flex">
+                                        <ul class="first">
+                                            <a href="#">
+                                                <li><img src="img/2-1_thumb.jpg" width="330" alt="날아라 로켓 창의예술체험"></li>
+                                                <li class="sub_tit"><em>창의예술</em><strong>피융! 날아라 로켓</strong></li>
+                                                <li><em>대상</em><span>5세 이상 어린이와 보호자 1인</span></li>
+                                                <li><em>장소</em><span>지하 1층 창의놀이실</span></li>
+                                                <li><em>일시</em><span>4월 주말, 오전 11시~오후 4시<br>* 현장 접수</span></li>
+                                                <li><em>참가비</em><span>5,000원</span></li>
+                                            </a>
+                                        </ul>
+                                        <ul class="second">
+                                            <a href="#">
+                                                <li><img src="img/1-2_thumb.jpg" width="330" alt="고슴도치 빵 만들기 체험교실"></li>
+                                                <li class="sub_tit"><em>가족요리</em><strong>고슴도치 빵</strong></li>
+                                                <li><em>대상</em><span>4세 이상 어린이와 보호자 1인</span></li>
+                                                <li><em>장소</em><span>지하 1층 요리놀이실</span></li>
+                                                <li><em>일시</em><span>4월 주말, 오후 2시<br>* 현장 접수</span></li>
+                                                <li><em>참가비</em><span>12,000원</span></li>
+                                            </a>
+                                        </ul>
+                                        <ul class="third">
+                                            <a href="#">
+                                                <li><img src="img/1-3_thumb.jpg" width="330" alt="케사디야 나비만들기 요리교실"></li>
+                                                <li class="sub_tit"><em>오감요리</em><strong>케사디야 나비</strong></li>
+                                                <li><em>대상</em><span>5세 이상</span></li>
+                                                <li><em>장소</em><span>지하 1층 요리놀이실</span></li>
+                                                <li><em>일시</em><span>4월 주말, 낮 12시<br>*현장 접수</span></li>
+                                                <li><em>참가비</em><span>10,000원</span></li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="fl"><a href="#">평일</a>
+                                    <div class="flex">
+                                        <ul class="first">
+                                            <a href="#">
+                                                <li><img src="img/1-1_thumb.png" width="330" alt="알록달록 빛의 집 교육안내"></li>
+                                                <li class="sub_tit"><em>심화교육</em><strong>알록달록 빛의 집(온라인)</strong></li>
+                                                <li><em>대상</em><span>6세 ~ 8세 어린이(2014년 ~ 2016년생)와 보호자 1인</span></li>
+                                                <li><em>장소</em><span>실시간 온라인(ZOOM)</span></li>
+                                                <li><em>일시</em><span>오후 1시 30분 (40분)<br>오후 3시 (40분)</span></li>
+                                                <li><em>참가비</em><span>12,000원</span></li>
+                                            </a>
+                                        </ul>
+                                        <ul class="second">
+                                            <a href="#">
+                                                <li><img src="img/3-1_thumb.jpg" width="330" alt="제 9기 지혜자람학교"></li>
+                                                <li class="sub_tit"><em>심화교육</em><strong>제9기 지혜자람학교(온라인)</strong></li>
+                                                <li><em>대상</em><span>7세 어린이(2015년생)와 보호자 1인</span></li>
+                                                <li><em>장소</em><span>실시간 온라인(ZOOM)</span></li>
+                                                <li><em>일시</em><span>수, 목, 금- 오후 4시~5시(60분)<br>토 오전- 11시~12시(60분)/오후 2시~3시(60분)</span></li>
+                                                <li><em>참가비</em><span>60,000원</span></li>
+                                            </a>
+                                        </ul>
+                                        <ul class="third">
+                                            <a href="#">
+                                                <li><img src="img/3-2_thumb.jpg" width="330" alt="제40기 어린이요리학교"></li>
+                                                <li class="sub_tit"><em>심화교육</em><strong>제40기 어린이요리학교</strong></li>
+                                                <li><em>대상</em><span>5~7세 어린이</span></li>
+                                                <li><em>장소</em><span>지하 1층 요리놀이실</span></li>
+                                                <li><em>일시</em><span>3시 40분~5시(80분) *수/금 1명씩 신청가능</span></li>
+                                                <li><em>참가비</em><span>80,000원</span></li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="fl"><a href="#">영아/초등</a>
+                                    <div class="flex">
+                                        <ul class="first">
+                                            <a href="#">
+                                                <li><img src="img/1-1_thumb.png" width="330" alt="알록달록 빛의 집 교육안내"></li>
+                                                <li class="sub_tit"><em>심화교육</em><strong>알록달록 빛의 집(온라인)</strong></li>
+                                                <li><em>대상</em><span>6세 ~ 8세 어린이(2014년 ~ 2016년생)와 보호자 1인</span></li>
+                                                <li><em>장소</em><span>실시간 온라인(ZOOM)</span></li>
+                                                <li><em>일시</em><span>오후 1시 30분 (40분)<br>오후 3시 (40분)</span></li>
+                                                <li><em>참가비</em><span>12,000원</span></li>
+                                            </a>
+                                        </ul>
+                                        <ul class="second">
+                                            <a href="#">
+                                                <li><img src="img/4-1_thumb.jpg" width="330" alt="제24기 영유아요리학교"></li>
+                                                <li class="sub_tit"><em>심화교육</em><strong>제24기 영유아요리학교</strong></li>
+                                                <li><em>대상</em><span>28개월~48개월 영유아와 보호자 1인</span></li>
+                                                <li><em>장소</em><span>지하 1층 요리놀이실</span></li>
+                                                <li><em>일시</em><span>10시 20분~11시 10분(50분)</span></li>
+                                                <li><em>참가비</em><span>80,000원</span></li>
+                                            </a>
+                                        </ul>
+                                        <ul class="third">
+                                            <a href="#">
+                                                <li><img src="img/2-1_thumb.jpg" width="330" alt="날아라 로켓 창의예술체험"></li>
+                                                <li class="sub_tit"><em>창의예술</em><strong>피융! 날아라 로켓</strong></li>
+                                                <li><em>대상</em><span>5세 이상 어린이와 보호자 1인</span></li>
+                                                <li><em>장소</em><span>지하 1층 창의놀이실</span></li>
+                                                <li><em>일시</em><span>4월 주말, 오전 11시~오후 4시<br>* 현장 접수</span></li>
+                                                <li><em>참가비</em><span>5,000원</span></li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="fl"><a href="#">방학</a>
+                                    <div class="flex">
+                                        <ul class="first">
+                                            <a href="#">
+                                                <li><img src="img/2-1_thumb.jpg" width="330" alt="날아라 로켓 창의예술체험"></li>
+                                                <li class="sub_tit"><em>창의예술</em><strong>피융! 날아라 로켓</strong></li>
+                                                <li><em>대상</em><span>5세 이상 어린이와 보호자 1인</span></li>
+                                                <li><em>장소</em><span>지하 1층 창의놀이실</span></li>
+                                                <li><em>일시</em><span>4월 주말, 오전 11시~오후 4시<br>* 현장 접수</span></li>
+                                                <li><em>참가비</em><span>5,000원</span></li>
+                                            </a>
+                                        </ul>
+                                        <ul class="second">
+                                            <a href="#">
+                                                <li><img src="img/1-2_thumb.jpg" width="330" alt="고슴도치 빵 만들기 체험교실"></li>
+                                                <li class="sub_tit"><em>가족요리</em><strong>고슴도치 빵</strong></li>
+                                                <li><em>대상</em><span>4세 이상 어린이와 보호자 1인</span></li>
+                                                <li><em>장소</em><span>지하 1층 요리놀이실</span></li>
+                                                <li><em>일시</em><span>4월 주말, 오후 2시<br>* 현장 접수</span></li>
+                                                <li><em>참가비</em><span>12,000원</span></li>
+                                            </a>
+                                        </ul>
+                                        <ul class="third">
+                                            <a href="#">
+                                                <li><img src="img/1-3_thumb.jpg" width="330" alt="케사디야 나비만들기 요리교실"></li>
+                                                <li class="sub_tit"><em>오감요리</em><strong>케사디야 나비</strong></li>
+                                                <li><em>대상</em><span>5세 이상</span></li>
+                                                <li><em>장소</em><span>지하 1층 요리놀이실</span></li>
+                                                <li><em>일시</em><span>4월 주말, 낮 12시<br>*현장 접수</span></li>
+                                                <li><em>참가비</em><span>10,000원</span></li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- //.edu_contents -->
+                    </div><!-- //.main_section -->
+                </div><!-- //#article4 -->
+            </div><!-- //.container -->
+        </div><!-- //#section -->
+        <div id="footer">
+            <div class="quick_menu cf">
+                <ul>
+                    <li class="fl"><a href="#"><em>개인예약</em><span></span></a></li>
+                    <li class="fl"><a href="#"><em>단체예약</em><span></span></a></li>
+                    <li class="fl"><a href="#"><em>교육예약</em><span></span></a></li>
+                </ul>
+            </div>
+            <div class="footBox cf">
+                <div class="f_container">
+                    <div class="footer_top">
+                        <div class="footer_menu cf">
+                            <ul>
+                                <li class="fl"><a href="#">인사말</a></li>
+                                <li class="fl"><a href="#">비전&미션</a></li>
+                                <li class="fl"><a href="#">MI소개</a></li>
+                                <li class="fl"><a href="#">전시개념</a></li>
+                                <li class="fl"><a href="#">건축물 소개</a></li>
+                            </ul>
+                            <div class="family_box">
+                                <a href="#">패밀리사이트</a>
+                            </div>
+                        </div>
+                    </div><!-- .footer_top -->
+                    <div class="footer_mid cf">
+                        <div class="footer_left fl">
+                            <ul class="policy cf">
+                                <li class="fl"><a href="#"><strong>개인정보 취급방침</strong></a></li>
+                                <li class="fl"><a href="#">이메일무단수집거부</a></li>
+                            </ul>
+                            <div class="f_info">
+                                <address>
+                                    04991(143-847) 서울특별시 광진구 능동로 216(능동 18번지) 서울상상나라(어린이대공원 내)<br>
+                                    TEL 02-6450-9500, FAX  02-6450-9540<br>
+                                    법인명 : 뮤지엄경영연구소 서울상상나라, 대표자 : 김병태<br>
+                                    등록번호 : 251-85-00376 통신판매번호 2016-서울광진-0941<br>
+                                    webmaster@seoulchildrensmuseum.org
+                                </address>
+                                <p class="copyright">
+                                    Copyright 2017. All rights Reserved.
+                                </p>
+                            </div>
+                        </div><!-- //.footer_left -->
+                        <div class="footer_right fr">
+                            <ul class="f_quickmenu cf">
+                                <li class="fl"><a href="#">상상나라극장</a></li>
+                                <li class="fl"><a href="#">층별안내</a></li>
+                                <li class="fl"><a href="#">오시는길</a></li>
+                            </ul>
+                            <ul class="f_mark cf">
+                                <li class="fl"><a href="#"><img src="img/img_mark1.jpg" alt="교육기부 진로체험 인증기관 교육부"></a></li>
+                                <li class="fl"><a href="#"><img src="img/img_mark2.png" alt="웹접근성 품질인증서"></a></li>
+                            </ul>
+                        </div><!-- //.footer_right -->
+                    </div>
+                    <div class="footer_bottom">
+                        <div class="f_site">
+                            <ul>
+                                <li class="fl"><a href="#"><img src="img/img_fsite01.png" alt="서울시청"></a></li>
+                                <li class="fl"><a href="#"><img src="img/img_fsite02.png" alt="서울 어린이대공원"></a></li>
+                                <li class="fl"><a href="#"><img src="img/img_fsite03.png" alt="광나루안전체험관"></a></li>
+                                <li class="fl"><a href="#"><img src="img/img_fsite04.png" alt="키즈오토파크"></a></li>
+                                <li class="fl"><a href="#"><img src="img/img_fsite05.png" alt="아리수"></a></li>
+                            </ul>
+                        </div>
+                    </div><!-- //.footer_bottom -->
+                </div><!-- //.f_container -->
+            </div><!-- //.footBox -->
+        </div><!-- //#footer -->
+    </div><!-- //#wrap -->
+    <!-- site_map_menu -->
+    <div id="site_map_menu">
+        <div class="bg100">
+            <div class="menu_container cf">
+                <ul class="fl">
+                    <li class="menu_tit"><h3>전시</h3></li>
+                    <li><a href="#">현재전시</a></li>
+                    <li><a href="#">지난전시</a></li>
+                </ul>
+                <ul class="fl">
+                    <li class="menu_tit"><h3>교육</h3></li>
+                    <li><a href="#">교육전체보기</a></li>
+                    <li><a href="#">학기 중 교육</a></li>
+                    <li><a href="#">방학교육</a></li>
+                    <li><a href="#">심화교육</a></li>
+                    <li><a href="#">나눔교육</a></li>
+                </ul>
+                <ul class="fl">
+                    <li class="menu_tit"><h3>관람•예약</h3></li>
+                    <li><a href="#">관람안내</a>
+                        <ul>
+                            <li><a href="#">입장안내</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                            <li><a href="#">편의시설</a></li>
+                            <li><a href="#">층별안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">개인예약</a></li>
+                    <li><a href="#">단체예약</a>
+                        <ul>
+                            <li><a href="#">단체관람예약</a></li>
+                            <li><a href="#">단체선택 프로그램</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">회원안내</a>
+                        <ul>
+                            <li><a href="#">회원가입안내</a></li>
+                            <li><a href="#">회원행사</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">자주하는 질문</a></li>
+                </ul>
+                <ul class="fl">
+                    <li class="menu_tit"><h3>소식</h3></li>
+                    <li><a href="#">새소식</a>
+                    <li><a href="#">온라인 서울상상나라</a>
+                    <li><a href="#">자원봉사안내</a>
+                    <li><a href="#">어린이큐레이터 안내</a>
+                    <li><a href="#">자료실</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var main_visual = new Swiper('.swiper-container.main_visual', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-prev',
+                prevEl: '.swiper-button-next',
+            }
+        });
+        var news = new Swiper('.news', {
+            direction: 'vertical',
+            slidesPerView:1,
+            spaceBetween: 5,
+            navigation: {
+            nextEl: '.btn_up',
+            prevEl: '.btn_down',
+            },
+            autoplay: {
+            delay: 3000, 
+            disableOnInteraction: false,
+            }
+        });
+        var sns_swiper = new Swiper('.swiper-container.sns_container', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            autoplay: {
+            delay: 3000, 
+            disableOnInteraction: false,
+            }
+        });
+        var exhibition = new Swiper('.swiper-container.exhibition_container', {
+            slidesPerView: 2,
+            autoplay: {
+            delay: 3500, 
+            disableOnInteraction: false,
+            },
+            pagination: {
+            el: '.swiper-pagination.exhibition-pagination',
+            type: 'progressbar',
+            }
+        });
+    </script>
+</body>
+</html>

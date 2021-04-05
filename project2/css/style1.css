@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* reset */
+*{margin: 0; padding: 0; border:0; box-sizing: border-box; outline: 0;}
+html{overflow-y: scroll; overflow-x: hidden;}
+body{font-family: 'Noto Sans KR','나눔고딕', sans-serif;}
+ul,li{list-style: none;}
+a{text-decoration: none; color:#333333;}
+img{border: 0;}
+
+/* 레이아웃 */
+#wrap{width: 100%;}
+.container{width: 1280px; margin: 0 auto;}
+.fl{float: left;}
+.fr{float: right;}
+.cf:after{content:''; display: block; clear: both;}
+
+/* #header */
+#gnb{width: 100%; background: #f2f2f2;}
+#gnb>.container>ul{float: right; margin: 10px 69px 10px 0;}
+#gnb li{font-size: 13px;}
+#gnb>.container>ul>li:after{content: '|'; color: #c6c6c6; margin: 0 12px;}
+#gnb>.container>ul>li:last-child:after{display: none;}
+#gnb>.container>ul>li:last-child{background: url(../img/icon_gnb.png) no-repeat 62px 8px; width: 70px;}
+#gnb .languageBox{text-transform: uppercase; font-size: 11px; background: #ffffff; text-align: center; position: relative; top: -17px; display: none;}
+#gnb .languageBox>li{border: 1px solid #dddddd; border-bottom: 1px solid transparent; padding: 3px 5px;}
+#gnb .languageBox>li:last-child{border-bottom: 1px solid #dddddd;}
+#gnb>.container>ul>li:last-child:hover .languageBox{display: block;}
+
+#lnb{width: 100%; border-bottom: 1px solid #bbbbbb;}
+#logo{margin: 10px 0 10px 90px;}
+.lnb_right{float: right;}
+.site_map{position: relative;}
+.site_map>button{cursor: pointer; background: #fff; position: absolute; right: 70px; top: 25px;}
+.sns{margin-right: 110px;}
+.sns>ul>li{padding: 25px 5px;}
+
+/* main_visual */
+#main_visual_wrap{position: relative;}
+.swiper-slide>.text{position: absolute; top: 0; left: 0; color: #ffffff; width: 320px; margin: 50px 0 0 120px;}
+.swiper-slide>.text p{font-size: 18px; padding-bottom: 24px;}
+.swiper-slide>.text h3{font-size: 50px; line-height: 60px; font-weight: bold; padding-bottom: 37px; height: 220px;}
+.swiper-slide>.text .main_more{border-bottom: 1px solid #ffffff;  width: 180px; padding: 10px;}
+.swiper-slide>.text .main_more>a{color: #ffffff; display: block; width: 100%; height: 24px; background: url(../img/icon_arrow.png) no-repeat 131px 8px;}
+
+/* main_visual_swiper */
+.swiper-container-horizontal > .swiper-pagination-bullets {bottom: 40px; left: 13px; width: 300px;}
+.swiper-pagination-bullets{--swiper-theme-color: #ffffff;}
+.main_visual_prev{background: url(../img/main_visual_prev_off.png)no-repeat;}
+.main_visual_prev:hover{background: url(../img/main_visual_prev_on.png)no-repeat;}
+.main_visual_next{background: url(../img/main_visual_next_off.png)no-repeat;}
+.main_visual_next:hover{background: url(../img/main_visual_next_on.png)no-repeat;}
+
+
+/* news */
+.news>p{margin-left: 70px; font-weight: bold;}
+.news>p:after{content: '|'; margin-left: 38px; color: #cecece;}
+
+/* news_swiper */
+.news{height: 40px; border-bottom: 1px solid #d5d5d5; line-height: 40px;}
+.news_wrapper.swiper-wrapper{width: 50%; height: 100px; top: -40px; left: 200px;}
+.news_wrapper>.swiper-slide{height: 100px;}
+.btn_up{background: url(../img/btn_up_off.png) no-repeat;}
+.btn_up:hover{background: url(../img/btn_up_on.png) no-repeat;}
+.btn_down{background: url(../img/btn_down_off.png) no-repeat;}
+.btn_down:hover{background: url(../img/btn_down_on.png) no-repeat;}
+.btn_up.swiper-button-prev:after{display: none;}
+.btn_down.swiper-button-next:after{display: none;}
+.btn_up.swiper-button-prev{top: 10px; left: 1243px;}
+.btn_down.swiper-button-next{top: 26px;}
+
+/* article1 */
+#article1{border-bottom: 1px solid #d5d5d5;}
+.info{width: 557px; height: 188px; position: relative; border-right: 1px solid #d5d5d5; padding: 30px; font-size: 16px;}
+.info>ul{position: absolute; top: 21px; left: 70px; width: 400px;}
+.info h3{font-size: 22px;}
+.info h3>a>img{position: absolute; top: 20px; right: 10px;}
+.info>ul>li{border-bottom: 1px solid #d5d5d5; height: 50px; width: 100%; line-height: 45px; padding: 5px;}
+.info>ul>li:last-child{border-bottom: 0;}
+.info li>span{padding-right: 34px;}
+.info li>strong{font-size: 17px; font-weight: bold; color: #222;}
+.info_wrap{width: 637px; height: 188px; position: relative;}
+.info_wrap>ul>li{width: 158px; height: 188px; border-right: 1px solid #d5d5d5;}
+.info_wrap>ul>li:last-child{border-right: 0;}
+.info_wrap>ul>li>a{display: block; width: 100%; height: 100%; text-align: center; padding-top: 39px; font-size: 18px;}
+.info_wrap>ul>li>a:hover{font-weight: bold; color: #000;}
+.info_wrap>ul>li>a>img{display: block; margin: 30px auto;}

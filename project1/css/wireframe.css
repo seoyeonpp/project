@@ -1,0 +1,46 @@
+*{margin: 0; padding: 0; border: 0;}
+body{font-size: 20px; text-align: center; color: #ffffff;}
+#wrap{width: 1400px; height: 3185px; margin: 0 auto;}
+    /* #header */
+#header{width:1400px; height: 163px; background: #ebebeb; }
+.header_top{width:1400px; height: 104px; background: #dddddd;}
+.header_top>div:first-child{width:146px; height: 86px; line-height: 86px; background: #979797; float: left;}
+.header_top>div:nth-child(2){width:531px; height: 104px; line-height: 104px; background: #979797; float: left; margin-left: 290px;}
+.header_bottom{width:1400px; height: 60px; background: #dddddd;}
+.header_bottom>div:nth-child(1){width:146px; height: 59px; line-height: 59px; background: #979797; float: left;}
+.header_bottom>div:nth-child(2){width:531px; height: 59px; line-height: 59px; background: #979797; float: left; margin-left: 290px;}
+.header_bottom>div:nth-child(3){width:191px; height: 59px; line-height: 59px; background: #979797; float: left; margin-left: 242px;}
+    /* #section */
+#section{width:1400px; height: 2820px; background: #ebebeb; }
+.main_visual{width:1400px; height: 783px; background: #b4b4b4;}
+.main_visual>div{width:1400px; height: 320px; line-height: 320px; background: #979797; position: relative; top: 220px;}
+    /* .article1 */
+.article1{width:1400px; height: 1079px; background: #dddddd;}
+.article1>div:nth-child(1){width:412px; height: 274px; line-height: 274px; background: #979797; float: left; margin-top: 88px;}
+.article1>div:nth-child(2){width:429px; height: 274px; line-height: 274px; background: #979797; float: left; margin-left: 76px; margin-top: 88px;}
+.article1>div:nth-child(3){width:410px; height: 274px; line-height: 274px; background: #979797; float: left; margin-left: 73px; margin-top: 88px;}
+.article1>div:nth-child(4){width:403px; height: 326px; line-height: 326px; background: #979797; float: left; margin-top: 57px;}
+.article1>div:nth-child(5){width:403px; height: 326px; line-height: 326px; background: #979797; float: left; margin-left: 95px; margin-top: 57px;}
+.article1>div:nth-child(6){width:403px; height: 326px; line-height: 326px; background: #979797; float: left; margin-left: 96px; margin-top: 57px;}
+.article1>div:nth-child(7){width:217px; height: 107px; line-height: 107px; background: #979797; float: left; margin-top: 55px;}
+.article1>div:nth-child(8){width:258px; height: 107px; line-height: 107px; background: #979797; float: left; margin-left: 55px; margin-top: 55px;}
+.article1>div:nth-child(9){width:298px; height: 107px; line-height: 107px; background: #979797; float: left; margin-left: 48px; margin-top: 55px;}
+.article1>div:nth-child(10){width:234px; height: 107px; line-height: 107px; background: #979797; float: left; margin-left: 48px; margin-top: 55px;}
+.article1>div:nth-child(11){width:193px; height: 107px; line-height: 107px; background: #979797; float: left; margin-left: 49px; margin-top: 55px;}
+.article1>div:nth-child(12){width:1400px; height: 90px; line-height: 107px; background: #979797; float: left; margin-top: 51px;}
+    /* .article2 */
+.article2{width:1400px; height: 373px; background: #dddddd;}
+.article2>div:first-child{width: 910px; height: 272px; line-height: 272px; background: #979797; float: left;}
+.article2>div:last-child{width: 430px; height: 272px; line-height: 272px; background: #979797; float: left; margin-left: 60px;}
+    /* .article3 */
+.article3{width:1400px; height: 588px; background: #dddddd;}
+.article3>div:first-child{width:302px; height: 494px; line-height: 494px; background: #979797; float: left;}
+.article3>div:nth-child(2){width:243px; height: 334px; line-height: 334px; background: #979797; float: left; margin-left: 25px; margin-top: 105px;}
+.article3>div:nth-child(3){width:243px; height: 334px; line-height: 334px; background: #979797; float: left; margin-left: 35px; margin-top: 105px;}
+.article3>div:nth-child(4){width:243px; height: 334px; line-height: 334px; background: #979797; float: left; margin-left: 35px; margin-top: 105px;}
+.article3>div:nth-child(5){width:243px; height: 334px; line-height: 334px; background: #979797; float: left; margin-left: 31px; margin-top: 105px;}
+    /* #footer */
+#footer{width:1400px; height: 208px; background: #dddddd;}
+#footer>div:first-child{width:435px; height: 181px; line-height: 181px; background: #979797; float: left;}
+#footer>div:nth-child(2){width:527px; height: 112px; line-height: 112px; background: #979797; float: left; margin-left: 180px; margin-top: 70px;}
+#footer>div:nth-child(3){width:237px; height: 115px; line-height: 115px; background: #979797; float: left; margin-left: 21px; margin-top: 36px;}
