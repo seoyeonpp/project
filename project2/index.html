@@ -28,6 +28,11 @@
     <script src="js/script.js"></script>
 </head>
 <body>
+    <div id="skip">
+        <a href="#main_visual_wrap" rel="bookmark">배너 영역 바로가기</a>
+        <a href="#news" rel="bookmark">공지사항 바로가기</a>
+        <a href="#article1" rel="bookmark">관람안내 바로가기</a>
+    </div>
     <div id="wrap">
         <div id="header">
             <div id="gnb">
@@ -72,7 +77,9 @@
                 <div id="main_visual_wrap">
                     <div class="main_visual swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="img/main_banner1.png" alt="서울상상나라 재개관 안내"></div>
+                            <div class="swiper-slide"><img src="img/main_banner_main.gif" alt="서울상상나라 메인배너"></div>
+                            <div class="swiper-slide"><img src="img/main_banner3.png" alt="어린이 큐레이터 모집안내"></div>
+                            <div class="swiper-slide"><img src="img/main_banner5.png" alt="상상나라 방탄 큐레이터 안내"></div>
                             <div class="swiper-slide"><img src="img/main_banner2.png" alt="신규전시 과학놀이 안내">
                                 <div class="text">
                                     <p>신규전시 | 3층 과학놀이</p>
@@ -80,7 +87,6 @@
                                     <div class="main_more"><a href="#">자세히보기</a><span></span></div>
                                 </div>
                             </div>
-                            <div class="swiper-slide"><img src="img/main_banner3.png" alt="어린이 큐레이터 모집안내"></div>
                             <div class="swiper-slide"><img src="img/main_banner4.jpg" alt="신규전시 나의 소리세상 안내">
                                 <div class="text">
                                     <p>신규전시 | 지하 1층 감성놀이</p>
@@ -88,8 +94,8 @@
                                     <div class="main_more"><a href="#">자세히보기</a><span></span></div>
                                 </div>
                             </div>
-                            <div class="swiper-slide"><img src="img/main_banner5.png" alt="상상나라 방탄 큐레이터 안내"></div>
                             <div class="swiper-slide"><img src="img/main_banner6.png" alt="서울 상상나라 전경"></div>
+                            <div class="swiper-slide"><img src="img/main_banner1.png" alt="서울상상나라 재개관 안내"></div>
                         </div>
                         <div class="swiper-pagination"></div>
                         <div class="btn_wrap">
@@ -581,8 +587,8 @@
                 clickable: true,
             },
             navigation: {
-                nextEl: '.swiper-button-prev',
-                prevEl: '.swiper-button-next',
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             }
         });
         var news = new Swiper('.news', {
