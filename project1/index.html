@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project1</title>
     <!-- css -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="css/style.css">
 
     <!-- script -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -274,79 +278,90 @@
                     <a href="#" class="stop">멈춤</a>
                     <a href="#" class="next">다음</a>
                 </div>
-                <div class="container cf">
-                    <div class="popup_zone fl">
-                        <div class="popup_icon">
-                            <img src="icon/popup_ti.png" alt="팝업존">
-                            <span class="popup_alarm"></span>
-                            <span class="popup_count"><a href="#">1</a></span>
-                        </div>
-                        <a href="#" class="fl popup_title"><b>『2021년도 연구선 산·학·연 공동활용 연구사업』 신규과제 공고</b></a>
-                        <div class="popup_control fl">
-                            <span><u>1</u>/1</span>
-                            <a href="#" class="prev">이전</a>
-                            <a href="#" class="stop">멈춤</a>
-                            <a href="#" class="next">다음</a>
-                        </div>
+                <div class="popup_zone fl">
+                    <div class="popup_icon">
+                        <img src="icon/popup_ti.png" alt="팝업존">
+                        <span class="popup_alarm"></span>
+                        <span class="popup_count"><a href="#">1</a></span>
+                    </div>
+                    <a href="#" class="fl popup_title"><b>『2021년도 연구선 산·학·연 공동활용 연구사업』 신규과제 공고</b></a>
+                    <div class="popup_control fl">
+                        <span><u>1</u>/1</span>
+                        <a href="#" class="prev">이전</a>
+                        <a href="#" class="stop">멈춤</a>
+                        <a href="#" class="next">다음</a>
                     </div>
                 </div>
             </div>
-            <div id="article1" class="container cf">
-                <div id="news">
-                    <h2>NEWS</h2>
-                    <div class="more_btn"><a href="#">more</a></div>
-                    <ul>
-                        <li><a href="#">공지</a>
-                            <ul>
-                                <li><a href="#"><span>공지</span>『2021년도 연구선 산·학·연 공동활용 연구사업』 신규과제 공고</a>2021-02-22</li>
-                                <li><a href="#"><span>공지</span>KIOST 2021년도 동계방학 현장실습 합격자 발표</a>2020-12-18</li>
-                                <li><a href="#"><span>공지</span>2020 환황해 지속가능 국제포럼</a>2020-12-03</li>
-                                <li><a href="#"><span>공지</span>KIOST 2021년도 동계방학 현장실습 지원자 모집 안내</a>2020-12-01</li>
-                                <li><a href="#"><span>공지</span>한국해양과학기술원 혁신도시 지역기업 우대기준</a>2020-11-18</li>
+            <div id="article1">
+                <div class="container cf">
+                    <div id="contents_top">
+                        <div id="news">
+                            <h2>NEWS</h2>
+                            <ul class=tab_menu_tit>
+                                <li class="fl on" data-tab="tab1"><a href="#">공지</a></li>
+                                <li class="fl" data-tab="tab2"><a href="#">채용</a></li>
+                                <li class="fl" data-tab="tab3"><a href="#">입찰</a></li>
                             </ul>
-                        </li>
-                        <li><a href="#">채용</a>
+                            <div class="more_btn"><a href="#"></a></div>
+                            <div class="tab_menu_conts">
+                                <ul id="tab1" class="tab_contents on">
+                                    <li><a href="#"><span>공지</span>『2021년도 연구선 산·학·연 공동활용 연구사업』 신규과제 공고</a>2021-02-22</li>
+                                    <li><a href="#"><span>공지</span>KIOST 2021년도 동계방학 현장실습 합격자 발표</a>2020-12-18</li>
+                                    <li><a href="#"><span>공지</span>2020 환황해 지속가능 국제포럼</a>2020-12-03</li>
+                                    <li><a href="#"><span>공지</span>KIOST 2021년도 동계방학 현장실습 지원자 모집 안내</a>2020-12-01</li>
+                                    <li><a href="#"><span>공지</span>한국해양과학기술원 혁신도시 지역기업 우대기준</a>2020-11-18</li>
+                                </ul>
+                                <ul id="tab2" class="tab_contents">
+                                    <li><a href="#"><span>채용</span>[한국해양과학기술원] 2021년 상반기 지원인력(정규직 및 무기계약직) 채용 ‘3차 전형(면접심사)’ 결과 안내</a>2021-03-25</li>
+                                    <li><a href="#"><span>채용</span>[제21-03-01호] 2021년 상반기 육아휴직대체인력 공개채용 추가합격자 안내</a>2021-03-22</li>
+                                    <li><a href="#"><span>채용</span>[한국해양과학기술원] 2021년 상반기 연구인력(정규직 및 무기계약직) 채용 ‘3차 전형(면접심사)’ 결과 안내</a>2021-03-19</li>
+                                    <li><a href="#"><span>채용</span>[제21-01-03호~05호/제21-02-03호] 2021년 상반기 직원 공개채용 ‘2차 전형(직무능력심사-필기)’ 결과 안내 (기술직/행정직/연구선승무원)</a>2021-03-12</li>
+                                    <li><a href="#"><span>채용</span>[제21-03-01호] 2021년 상반기 육아휴직대체인력 공개채용 최종합격자 안내</a>2021-03-10</li>
+                                </ul>
+                                <ul id="tab3" class="tab_contents">
+                                    <li><a href="#"><span>입찰</span>[외자] Deep Sea Multibeam Echosounder</a>2021-03-26</li>
+                                    <li><a href="#"><span>입찰</span>[내자] (신규공고) 파랑 글라이더용 유향유속 관측센서</a>2021-03-25</li>
+                                    <li><a href="#"><span>입찰</span>[용역](신규공고) 무인잠수정 임차 및 용역</a>2021-03-22</li>
+                                    <li><a href="#"><span>입찰</span>[보험] 2021년 한국해양과학기술원 연구선 선원근로자 재해보장 책임보험(21-105)</a>2021-03-19</li>
+                                    <li><a href="#"><span>입찰</span>[용역](신규공고) 2021년 장목2호 상가수리 용역 소액수의 견적공고</a>2021-03-18</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="board">
+                            <h2>보도자료</h2>
+                            <div class="more_btn"><a href="#"></a></div>
                             <ul>
-                                <li><a href="#"><span>채용</span>[한국해양과학기술원] 2021년 상반기 지원인력(정규직 및 무기계약직) 채용 ‘3차 전형(면접심사)’ 결과 안내</a>2021-03-25</li>
-                                <li><a href="#"><span>채용</span>[제21-03-01호] 2021년 상반기 육아휴직대체인력 공개채용 추가합격자 안내</a>2021-03-22</li>
-                                <li><a href="#"><span>채용</span>[한국해양과학기술원] 2021년 상반기 연구인력(정규직 및 무기계약직) 채용 ‘3차 전형(면접심사)’ 결과 안내</a>2021-03-19</li>
-                                <li><a href="#"><span>채용</span>[제21-01-03호~05호/제21-02-03호] 2021년 상반기 직원 공개채용 ‘2차 전형(직무능력심사-필기)’ 결과 안내 (기술직/행정직/연구선승무원)</a>2021-03-12</li>
-                                <li><a href="#"><span>채용</span>[제21-03-01호] 2021년 상반기 육아휴직대체인력 공개채용 최종합격자 안내</a>2021-03-10</li>
+                                <li><a href="#">KIOST, 신속하고 정확하게 기름유출 원인 밝혀낸다.</a>2021-03-10</li>
+                                <li><a href="#">KIOST 2개 연구실, 안전관리 우수 인증 추가획득</a>2021-01-15</li>
+                                <li><a href="#">KIOST, 천리안 위성과 수치모형 활용하여 해양부유물 이동경로 예측한다.</a>2021-01-13</li>
+                                <li><a href="#">KIOST,  미래를 꿈꾸는 해양문고 시리즈 2권 발간</a>2021-01-12</li>
+                                <li><a href="#">KIOST, 인도네시아 여객기 추락 사고현장에 수색지원 나서</a>2021-01-11</li>
                             </ul>
-                        </li>
-                        <li><a href="#">입찰</a>
-                            <ul>
-                                <li><a href="#"><span>입찰</span>[외자] Deep Sea Multibeam Echosounder</a>2021-03-26</li>
-                                <li><a href="#"><span>입찰</span>[내자] (신규공고) 파랑 글라이더용 유향유속 관측센서</a>2021-03-25</li>
-                                <li><a href="#"><span>입찰</span>[용역](신규공고) 무인잠수정 임차 및 용역</a>2021-03-22</li>
-                                <li><a href="#"><span>입찰</span>[보험] 2021년 한국해양과학기술원 연구선 선원근로자 재해보장 책임보험(21-105)</a>2021-03-19</li>
-                                <li><a href="#"><span>입찰</span>[용역](신규공고) 2021년 장목2호 상가수리 용역 소액수의 견적공고</a>2021-03-18</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div id="board">
-                    <h2>보도자료</h2>
-                    <div class="more_btn"><a href="#">more</a></div>
-                    <ul>
-                        <li><a href="#">KIOST, 신속하고 정확하게 기름유출 원인 밝혀낸다.</a>2021-03-10</li>
-                        <li><a href="#">KIOST 2개 연구실, 안전관리 우수 인증 추가획득</a>2021-01-15</li>
-                        <li><a href="#">KIOST, 천리안 위성과 수치모형 활용하여 해양부유물 이동경로 예측한다.</a>2021-01-13</li>
-                        <li><a href="#">KIOST,  미래를 꿈꾸는 해양문고 시리즈 2권 발간</a>2021-01-12</li>
-                        <li><a href="#">KIOST, 인도네시아 여객기 추락 사고현장에 수색지원 나서</a>2021-01-11</li>
-                    </ul>
-                </div>
-                <div>pr_movie</div>
-                <div>info_1</div>
-                <div>info_2</div>
-                <div>info_3</div>
-                <div>list_1</div>
-                <div>list_2</div>
-                <div>list_3</div>
-                <div>list_4</div>
-                <div>list_5</div>
-                <div>slider</div>
-            </div>
+                        </div>
+                        <div id="pr_movie">
+                            <a href="#">
+                                <div class="pr_movie_tit">
+                                    <em>PR</em>
+                                    <em>MOVIE</em>
+                                    <span></span>
+                                </div>
+                                <div class="pr_movie_logo">
+                                    <img src="icon/mpr_logo.png" alt="logo">
+                                </div>
+                            </a>
+                        </div>
+                    </div><!-- //#contents_top -->
+                    <div id="contents_middle">
+                        <div>info_1</div>
+                        <div>info_2</div>
+                        <div>info_3</div>
+                    </div>
+                    <div id="contents_bottom">
+                        <div>slider</div>
+                    </div>
+                </div><!-- //.container -->
+            </div><!-- //#article1 -->
             <div id="article2" class="container cf">
                 <div>sns</div>
                 <div>youtube</div>
