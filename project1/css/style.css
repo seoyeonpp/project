@@ -149,8 +149,16 @@ iframe{width: 100%; height: 1071.56px; margin-top: 0; margin-left: 0;}
 #board>ul>li{font-size:13px; width: 420px;border-bottom: 1px solid #d7d7d7; padding: 4px 0; line-height: 30px;}
 
 #pr_movie>a{height: 100%; display: block; background: url(../img/bg_mpr.png)no-repeat center center;}
-
-
+#pr_movie>a>.pr_movie_tit{color: #fff; padding: 20px 0 0 20px;}
+#pr_movie>a>.pr_movie_tit>em{height: 50px; line-height: 14px; display: inline-block;}
+#pr_movie>a>.pr_movie_tit>span{background: url(../icon/micon.png)no-repeat -158px -50px;  display: inline-block; width: 30px; height: 30px;}
+#pr_movie>a>.pr_movie_logo{text-align: center; margin-top: 30px; margin-left: 30px;}
+#pr_movie>a>.play_btn{text-align: center; color: #035fca; font-size: 60px; position: relative; top: -70px; display: none;  transition: all 0.3s; animation-name: btn; animation-duration: 0.8s; animation-iteration-count: 1; transform: scale(1.2);}
+#pr_movie>a:hover>.play_btn{display: block;}
+@keyframes btn{
+    from{transform: scale(1); color: #ffffff;}
+    to{transform: scale(1.2); color: #035fca;}
+}
 
 /* #footer */
 footer {background-color: #08112a;display: block; width: 100%;padding: 38px 0;font-size: 13px;}
