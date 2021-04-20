@@ -12,6 +12,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 ul,li{list-style: none;}
 a{text-decoration: none; color:#333333;}
 img{border: 0;}
+.ir_so{overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
 
 /* layout */
 #wrap{width: 100%;}
