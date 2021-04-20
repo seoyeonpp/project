@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="shortcut icon" href="icon/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- script -->
     <script src="https://kit.fontawesome.com/5164664a2f.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script defer src="js/script.js"></script>
 </head>
 
 <body>
@@ -491,8 +492,8 @@
                         <a href="#"></a>
                     </div>
                     <ul>
-                        <li class="cf"><p><a href="#">바다에 흘러든 기름 사고!! 꼼작...</a></p><div class="date"><span><i class="fa fa-fw fa-clock-o"></i>2021.04.17</span></div><span class="thumbnail"><img src="img/youtube_1.jpg" alt="유튜브 썸네일 기름유출사고" width="121" height="68"></span></li>
-                        <li class="cf"><p><a href="#">3월 울릉도·독도 이달의 수산물,...</a></p><div class="date"><span><i class="fa fa-fw fa-clock-o"></i>2021.03.31</span></div><span class="thumbnail"><img src="img/youtube_2.jpg" alt="유튜브 썸네일 이달의 수산물" width="121" height="68"></span></li>
+                        <li class="cf"><p><a href="#">바다에 흘러든 기름 사고!! 꼼작...</a></p><div class="date"><span><i class="fa fa-fw fa-clock-o"></i>2021.04.17</span></div><span class="thumbnail"><a href="#"><img src="img/youtube_1.jpg" alt="유튜브 썸네일 기름유출사고" width="121" height="68"></a></span></li>
+                        <li class="cf"><p><a href="#">3월 울릉도·독도 이달의 수산물,...</a></p><div class="date"><span><i class="fa fa-fw fa-clock-o"></i>2021.03.31</span></div><span class="thumbnail"><a href="#"><img src="img/youtube_2.jpg" alt="유튜브 썸네일 이달의 수산물" width="121" height="68"></a></span></li>
                     </ul>
                 </div>
             </div>
@@ -555,6 +556,9 @@
                 </div>
             </div>
         </footer>
+        <div id="top_btn">
+            <a href="#top" class="top_btn" title="Go to Top">TOP <i class="fas fa-caret-up"></i></a>
+        </div>
     </div>
     <script>
         var swiper = new Swiper('.swiper-container', {
