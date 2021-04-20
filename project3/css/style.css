@@ -1,0 +1,24 @@
+*{margin: 0; padding: 0;}
+body{font-family: 'Noto Sans KR', sans-serif; color: #333;}
+.fl{float: left;}
+cf:after{content: ''; display: block; clear: both;}
+a{text-decoration: none; color: #333;}
+ul,li{list-style: none;}
+em{font-style: normal;}
+.container{width: 1000px; margin: auto;}
+
+/* header */
+header{display: flex; justify-content: space-between; height: 80px; width: 100%;}
+#logo h1>a{font-size: 0;}
+#logo{margin-left: 30px;}
+#gnb{line-height: 80px;}
+#gnb ul li{margin-right: 30px;}
+#gnb ul li:last-child{margin-right: 0;}
+#gnb ul li a{color: #444444; font-size: 18px; font-weight: bold;}
+#util{margin-right: 30px; line-height: 80px;}
+#util a{font-size: 12px; color: #444444; background: #ffffff; border: 1px solid #efefef; display: inline-block; border-radius: 50px; width: 70px; height: 34px; text-align: center; line-height: 34px;}
+#util a:nth-child(1){color: #fff; background: #444444;}
+#util a:nth-child(3){background: url(../img/ico_together.png)no-repeat  -30px -28px; border: 0; border-radius: 0; width: 30px; text-indent: -999999px;}
+
+/* section */
+#main_banner
