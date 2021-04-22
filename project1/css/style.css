@@ -246,8 +246,10 @@ iframe{width: 100%; height: 1071.56px; margin-top: 0; margin-left: 0;}
 ul.newsletter{overflow: hidden; height: 335px; position: absolute; top: 50%; transform: translateY(-50%); left: 560px;}
 ul.newsletter>li{float: left; padding: 0 20px; width: 250px; height: 337px; position: relative;}
 ul.newsletter>li>a{display: block; width: 100%; }
-ul.newsletter>li>a .newsletter_img{width: 100%; height: 122px;display: block;}
-ul.newsletter>li>a .newsletter_img img{width: 100%; height: 100%;}
+ul.newsletter>li>a:hover .newsletter_img img{transform:scale(1.1)}
+ul.newsletter>li>a:hover .info_area .newsletter_tit{color: #000000;}
+ul.newsletter>li>a .newsletter_img{width: 100%; height: 122px;display: block; overflow: hidden;}
+ul.newsletter>li>a .newsletter_img img{width: 100%; height: 100%; transition:all 0.5s;}
 ul.newsletter>li>a .info_area{display: block; background: #fff; width: 100%; height: 169px; padding: 10px;}
 ul.newsletter>li>a .info_area .newsletter_tit{color: #666666; font-size: 15px; font-weight: bold; height: 60px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
 ul.newsletter>li>a .info_area .newsletter_tit>em{font-style: normal; color: #005fc3; font-size: 13px; display: block; text-align: right; font-weight: bold; padding-bottom: 5px;}
@@ -276,6 +278,12 @@ footer {background-color: #08112a;display: block; width: 100%;padding: 38px 0;fo
 .address a:hover { color: #000000;}
 .site button {cursor: pointer; width: 200px; height: 32px; background-color: #08112a; border: 1px solid #fff; color: #ffffff; font-size: 14px; padding-bottom: 38px; position: absolute; right: 40px; top: 80px;}
 .site button span {font-size: 24px; padding-left: 100px; position: relative; top: 4px; left: -1px;}
+.site .site_select{background: #fff; width: 200px; padding: 20px; position: relative; top: -159px; left: -40px; display: none;}
+.site .site_select li{text-align: left; border-bottom: 1px dotted #dedede; padding: 10px 0;}
+.site .site_select li:last-child{border-bottom: 0;}
+.site .site_select li a{font-size: 15px; color: #555555;}
+.site .site_select.active{display: block;}
+
 
 /* #top_btn */
 #top_btn{position: fixed; width: 70px; height: 70px; bottom: 70px; right: 70px; opacity:0; transition: opacity .5s;}

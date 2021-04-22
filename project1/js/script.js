@@ -21,6 +21,14 @@ $(document).ready(function () {
     })
 });
 
+// 푸터 관련사이트
+const siteBtn = document.querySelector('.site button');
+const siteList = document.querySelector('.site .site_select');
+siteBtn.addEventListener('click', function () {
+    siteList.classList.toggle('active');
+});
+
+// 탑버튼
 let Top = document.querySelector('#top_btn');
 
 window.addEventListener('scroll', function () {
@@ -29,9 +37,9 @@ window.addEventListener('scroll', function () {
     } else {
         Top.classList.remove('on');
     }
-})
+});
 
 Top.addEventListener('click', function (e) {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
-})
+});
