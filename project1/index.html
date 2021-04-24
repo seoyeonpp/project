@@ -8,14 +8,12 @@
     <!-- css -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="shortcut icon" href="icon/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- script -->
     <script src="https://kit.fontawesome.com/5164664a2f.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script defer src="js/script.js"></script>
 </head>
 
@@ -241,33 +239,33 @@
                         <span>바다에서 찾는 국민의 행복, 인류에 공헌하는 해양과학기술</span>
                     </h2>
                 </div>
-                <div class="swiper-container cf">
-                    <div class="grep cf swiper-wrapper">
-                        <div class="grid_content fl swiper-slide">
+                <div class="main_visual_wrapper cf">
+                    <div class="cf main_visual_slider">
+                        <div class="grid_content m_slide">
                             <a href="#">
                                 <span class="img"><img src="img/noimg.gif" alt="이미지없음"></span>
                                 <span class="text"><b><em>신속하고 정확하게 기름유출 원인 밝혀낸다.</em></b><em class="more">MORE</em></span>
                             </a>
                         </div>
-                        <div class="grid_content fl swiper-slide">
+                        <div class="grid_content m_slide">
                             <a href="#">
                                 <span class="img"><img src="img/ship.jpg" alt="여객기 추락 사고현장 수색지원"></span>
                                 <span class="text"><b><em class="subTitle">KIOST, 인도네시아 여객기 추락 사고현장에 수색지원 나서</em>아라호 및 전문인력 투입하여 여객기 동체 위치파악 등 예정</b><em class="more">MORE</em></span>
                             </a>
                         </div>
-                        <div class="grid_content fl swiper-slide">
+                        <div class="grid_content m_slide">
                             <a href="#">
                                 <span class="img"><img src="img/map.jpg" alt="위성경로예측이미지"></span>
                                 <span class="text"><b><em>KIOST, 천리안 위성과 수치모형 활용하여 해양부유물 이동경로 예측한다.</em></b><em class="more">MORE</em></span>
                             </a>
                         </div>
-                        <div class="grid_content fl swiper-slide">
+                        <div class="grid_content m_slide">
                             <a href="#">
                                 <span class="img"><img src="img/pop.jpg" alt="안전관리우수인증 이미지"></span>
                                 <span class="text"><b><em>KIOST 2개 연구실, 안전관리 우수 인증 추가획득</em></b><em class="more">MORE</em></span>
                             </a>
                         </div>
-                        <div class="grid_content fl swiper-slide">
+                        <div class="grid_content m_slide">
                             <a href="#">
                                 <span class="img"><img src="img/pop2.jpg" alt="공직자 이해충돌방지법 제정 이미지"></span>
                                 <span class="text"><b><em>공직자의 이해충돌방지법 제정</em></b><em class="more">MORE</em></span>
@@ -276,9 +274,9 @@
                     </div>
                 </div>
                 <div class="control_mvisual cf">
-                    <a href="#" class="prev">이전</a>
-                    <a href="#" class="stop">멈춤</a>
-                    <a href="#" class="next">다음</a>
+                    <span href="#" class="prev">이전</span>
+                    <span href="#" class="stop">멈춤</span>
+                    <span href="#" class="next">다음</span>
                 </div>
                 <div class="popup_zone fl">
                     <div class="popup_icon">
@@ -681,23 +679,5 @@
             <a href="#top" class="top_btn" title="Go to Top">TOP <i class="fas fa-caret-up"></i></a>
         </div>
     </div>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            autoplay: {
-            delay: 3500,
-            disableOnInteraction: false, 
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-            nextEl: '.control_mvisual>.next',
-            prevEl: '.control_mvisual>.prev',
-            },
-        });
-    </script>
 </body>
 </html>
