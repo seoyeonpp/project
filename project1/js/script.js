@@ -60,21 +60,16 @@ m_prev.addEventListener('click', function () {
     moveMain(currentSlide - 1);
 })
 
-function moveMain(main) {
-    m_slider.style.left = -main * (slideW + slideM) + 'px';
-    currentSlide = main;
-}
 
-
-// function moveMain() {
-//     m_slider.style.left = -(currentSlide) * slideW + 'px';
-//     currentSlide++;
-//     if (currentSlide == countSlide) {
-//         currentSlide = 0;
-//     }
-//     console.log(currentSlide);
-// };
-// setInterval(moveMain, 2500);
+function moveMain() {
+    m_slider.style.left = -currentSlide * (slideW + slideM) + 'px';
+    currentSlide++;
+    if (currentSlide == countSlide + 5) {
+        currentSlide = 0;
+    }
+    console.log(currentSlide);
+};
+setInterval(moveMain, 2000);
 
 
 
