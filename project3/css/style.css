@@ -5,7 +5,7 @@ cf:after{content: ''; display: block; clear: both;}
 a{text-decoration: none; color: #333;}
 ul,li{list-style: none;}
 em{font-style: normal;}
-.container{width: 1000px; margin: auto;}
+.container{width: 1000px; margin: 50px auto;}
 
 /* header */
 header{display: flex; justify-content: space-between; height: 80px; width: 100%;}
@@ -20,12 +20,12 @@ header{display: flex; justify-content: space-between; height: 80px; width: 100%;
 #util a:nth-child(1){color: #fff; background: #444444;}
 #util a:nth-child(3){background: url(../img/ico_together.png)no-repeat  -30px -28px; border: 0; border-radius: 0; width: 30px; text-indent: -999999px;}
 
-/* section */
+/* #main_banner */
 #main_banner .main_slide{position: relative;}
 #main_banner .s_txt{width: 500px;}
 #main_banner .main_slide ul{height: 300px; overflow: hidden;}
 #main_banner .main_slide li>a{display: block; width: 100%; height: 280px;}
-#main_banner .s_txt em{font-size: 14px; color: #444444;}
+#main_banner .s_txt em{font-size: 14px; color: #444444; font-weight: bold;}
 #main_banner .s_txt h3{font-size: 36px; color: #444444; width: 60%;}
 #main_banner .s_txt p{font-size: 14px; color: #444444; width: 60%;}
 #main_banner .main_slide li .s_thumbnail{width: 492px; height: 280px; border-radius: 20px; overflow: hidden;}
@@ -35,3 +35,31 @@ header{display: flex; justify-content: space-between; height: 80px; width: 100%;
 #main_banner .main_slide li.no4 .s_thumbnail span{background: url(../img/thumb04.jpg) no-repeat center center; width: 100%; height: 100%; display: block; transition: 0.5s;}
 #main_banner .main_slide li.no5 .s_thumbnail span{background: url(../img/thumb05.jpg) no-repeat center center; width: 100%; height: 100%; display: block; transition: 0.5s;}
 #main_banner .main_slide li>a:hover .s_thumbnail span{transform: scale(1.1)}
+.bx-pager{display: flex;  justify-content: flex-start; align-items: center;}
+.bx-pager-item{background: #ccc; display: inline-block;  border-radius: 50%;  width: 10px;  height: 10px;  text-indent: -9999px;  margin-right: 5px;}
+.hash_tag{margin: 80px 0;}
+.hash_tag>.items{display: flex; justify-content: center; align-items: center; text-align: center; }
+.hash_tag>.items>a{display: block; height: 65px; line-height: 65px; padding: 10px; position: relative; border-radius: 40px; margin: 0 10px; width: 15%;}
+.hash_tag>.items>a>span{color: #fff; font-size: 15px; z-index: 3; position: relative;}
+.hash_tag>.items>a:after{content: ''; background: #000; opacity: 0.3; display: block; position: absolute; top:0; left: 0; width: 100%; height: 100%; border-radius: 40px;  transition: all 0.5s;}
+.hash_tag>.items>a:hover:after{opacity: 0;}
+.hash_tag>.items>a:nth-child(1){background: url(../img/tag01.jpg)no-repeat center center; background-size: cover;}
+.hash_tag>.items>a:nth-child(2){background: url(../img/tag02.jpg)no-repeat center center; background-size: cover;}
+.hash_tag>.items>a:nth-child(3){background: url(../img/tag03.jpg)no-repeat center center; background-size: cover;}
+.hash_tag>.items>a:nth-child(4){background: url(../img/tag04.jpg)no-repeat center center; background-size: cover;}
+.hash_tag>.items>a:nth-child(5){background: url(../img/tag05.jpg)no-repeat center center; background-size: cover;}
+
+/* #donate */
+#donate h4{font-size: 24px; color: #444444; margin-bottom: 20px;}
+.content{margin: 0 0 50px; display: flex; justify-content: space-between;}
+.content_card{width: 236px; height: 272px;}
+.content_card>a{display: block; width: 100%; height: 100%;}
+.content_card>a:hover .cont_thumbnail img{display: block; width: 100%; height: 100%; transform: scale(1.1);} 
+.content_card .cont_thumbnail{display: block; border-radius: 20px; overflow: hidden;}
+.content_card .cont_thumbnail img{display: block; width: 100%; transition: transform 0.5s;}
+.content_card .cont_tit{color: #444444; font-size: 17px; display: block; padding: 10px; height: 70px;}
+.content_card .cont_sub{color: #999999; font-size: 13px; display: block; padding: 0px 10px;}
+.state_wrap{float: left; width: 40%; height: 2px; position: relative; margin: 20px 10px 0;}
+.state_bar{background: #ebebeb; width: 100%; height: 2px; position: relative; overflow: hidden;display: block;}
+.state_gage{background: #e35396; position: absolute; top: 0; left: 0; height: 2px; display: block; width: 40%;}
+.price_goal{text-align: right; display: block;}
