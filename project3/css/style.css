@@ -63,3 +63,4 @@ header{display: flex; justify-content: space-between; height: 80px; width: 100%;
 .state_bar{background: #ebebeb; width: 100%; height: 2px; position: relative; overflow: hidden;display: block;}
 .state_gage{background: #e35396; position: absolute; top: 0; left: 0; height: 2px; display: block; width: 40%;}
 .price_goal{text-align: right; display: block;}
+.more button{cursor: pointer; width: 90px; padding: 10px; background: #fff; border: 1px solid #efefef; border-radius: 20px; font-size: 15px; color: #444444; display: block; margin: 0 auto;}
