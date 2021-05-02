@@ -1,11 +1,11 @@
 *{margin: 0; padding: 0;}
 body{font-family: 'Noto Sans KR', sans-serif; color: #333; box-sizing: border-box;}
 .fl{float: left;}
-cf:after{content: ''; display: block; clear: both;}
+.cf:after{content: ''; display: block; clear: both;}
 a{text-decoration: none; color: #333;}
 ul,li{list-style: none;}
 em{font-style: normal;}
-.container{width: 1000px; margin: 50px auto;}
+.container{width: 1000px; margin: auto;}
 
 /* header */
 header{display: flex; justify-content: space-between; height: 80px; width: 100%;}
@@ -73,3 +73,23 @@ header{display: flex; justify-content: space-between; height: 80px; width: 100%;
 .slider_cont:nth-child(2){background: url(../img/slider_2.jpg)no-repeat center bottom; background-size: cover;}
 .slider_cont:nth-child(3){background: url(../img/slider_3.jpg)no-repeat center center; background-size: cover;}
 .slider_cont.showing{opacity: 1; z-index: 1;}
+
+/* footer */
+footer{width: 100%; background: #302f30; color: #6f6e6f;}
+#footer{display: flex;justify-content: space-between; padding: 50px 0;}
+.footer_right .right_top{display: flex; justify-content: space-between;}
+.footer_right .right_top p{font-size: 14px; text-align: right;}
+.footer_right .right_top a{display: block; font-size: 16px; color: #838383; border: 1px solid #838383; border-radius: 50px; padding: 10px 20px; margin-left: 20px;}
+.footer_right .right_bottom{margin-top: 20px;}
+.footer_right .right_bottom .help{height: 46px; line-height: 46px;}
+.footer_right .right_bottom .help a{font-size: 17px; color: #989798; display: inline-block;}
+.footer_right .right_bottom .help a:hover{text-decoration: underline;}
+.footer_right .right_bottom .help .after::after{content: '∙'; width: 10px; height: 10px;}
+.footer_right .right_bottom p{font-size: 15px; color: #6c6c6c; text-align: right; clear: both;}
+.footer_right .f_sns{height: 46px; margin-left: 57px; margin-bottom: 20px;}
+.footer_right .f_sns a{display: inline-block; border: 1px solid #5e5d5e; border-radius: 22px; width: 44px; height: 44px; text-align: center; margin: 0 3px;}
+.footer_right .f_sns span{display: inline-block; background: url(../img/ico_together2.png) no-repeat; width: 28px; height: 28px; text-indent: -999999px; margin-top: 8px;}
+.footer_right .f_sns a:nth-child(1) span{background-position: -94px 3px;}
+.footer_right .f_sns a:nth-child(2) span{background-position: -124px 3px; width: 14px; height: 23px;}
+.footer_right .f_sns a:nth-child(3) span{background-position: -139px 3px; width: 14px; height: 24px;}
+.footer_right .f_sns a:nth-child(4) span{background-position: -93px -78px;}
