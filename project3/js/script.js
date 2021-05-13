@@ -1,4 +1,16 @@
+/* jQuery */
 $(function () {
+    //모바일 메뉴
+    var nav = $('.mobile_btn');
+    nav.click(function () {
+        $('#mobile').show();
+        $('#mobile .bg100').click(function () {
+            $('#mobile').hide();
+        });
+        return false;
+    });
+
+
     // 배너슬라이드
     $('.main_slide>ul').bxSlider({
         auto: true,
@@ -6,12 +18,14 @@ $(function () {
         speed: 1500,
         pause: 3000,
         autoHover: true,
+        pager: false,
         infiniteLoop: true,
-        pager: true,
         controls: false,
     })
-})
 
+})/* //jQuery */
+
+/* javascript */
 // 캐러셀슬라이드
 const showingClass = "showing";
 const firstSlide = document.querySelector(".slider_cont:first-child");
