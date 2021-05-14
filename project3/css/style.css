@@ -166,6 +166,7 @@ footer{width: 100%; background: #302f30; color: #6f6e6f;}
     .items>a:first-child{display: none;}
 
     /* #donate */
+    #donate h4{margin-left: 20px;}
     .content>.content_card:last-child{display: none;}
 
     /* #fund_info */
