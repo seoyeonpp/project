@@ -181,7 +181,7 @@ footer{width: 100%; background: #302f30; color: #6f6e6f;}
     #footer{justify-content: space-around;}
 }
 
-@media screen and (min-width: 376px) and (max-width: 768px){
+@media screen and (min-width: 413px) and (max-width: 768px){
     .mobile_btn{display: block;}
     .container{width: 768px;}
     /* header */
@@ -217,7 +217,7 @@ footer{width: 100%; background: #302f30; color: #6f6e6f;}
     .footer_right .right_top a {font-size: 14px;}
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 412px){
     .mobile_btn{display: block;}
     .container{width: 375px;}
     #mobile .menu_container{width: 200px;}
