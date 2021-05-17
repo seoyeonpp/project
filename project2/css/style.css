@@ -122,8 +122,9 @@ img{border: 0;}
 #article4>.main_section .tab_menu>li.on>a{color: #222; border: 2px solid #000; padding: 5px 19px;}
 #article4>.main_section>.edu_contents>div{font-size: 18px; color: #666666; margin-right: 20px;}
 #article4 .main_section .edu_contents .tab_menu>li .flex{display: flex;  width: 1080px; justify-content: space-between; flex-wrap: nowrap;}
-#article4 .main_section .edu_contents .tab_menu>li .flex>a{display: block; width: 330px;}
-#article4 .main_section .edu_contents .tab_menu>li .flex>a>ul{width: 330px;}
+#article4 .flex>a{display: block; width: 330px;}
+#article4 .flex>a>ul{width: 330px;}
+#article4 .flex>a>ul.first{width: 330px;}
 #article4>.main_section .tab_menu .flex{position: absolute; top: 70px; left: 40px;}
 #article4>.main_section .tab_menu>li ul li>em{display: inline-block; font-style: normal; font-weight: bold; padding-right: 25px;}
 #article4>.main_section .tab_menu>li ul li{border-top: 1px solid #d5d5d5; padding: 15px 0; line-height: 23px;}
