@@ -540,7 +540,16 @@ img {
       flex-wrap: nowrap;
 }
 
-#article4 .flex > ul {
+#article4 .flex > a {
+  display: block;
+  width: 330px;
+}
+
+#article4 .flex > a > ul {
+  width: 330px;
+}
+
+#article4 .flex > a > ul.first {
   width: 330px;
 }
 
@@ -874,4 +883,4 @@ img {
   border-bottom: 2px solid #444444;
   padding: 20px 0;
 }
-/*# sourceMappingURL=test.css.map */
+/*# sourceMappingURL=scss.css.map */

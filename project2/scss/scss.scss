@@ -149,7 +149,9 @@ img{border: 0;}
     &>.main_section .tab_menu>li.on>a{color: #222; border: 2px solid #000; padding: 5px 19px;}
     &>.main_section>.edu_contents>div{font-size: 18px; color: #666666; margin-right: 20px;}
     .flex{@include display(flex);  width: 1080px; justify-content: space-between; flex-wrap: nowrap;}
-    .flex>ul{width: 330px;}
+    .flex>a{display: block; width: 330px;}
+    .flex>a>ul{width: 330px;}
+    .flex>a>ul.first{width: 330px;}
     &>.main_section .tab_menu .flex{position: absolute; top: 70px; left: 40px;}
     &>.main_section .tab_menu>li ul li>em{@include display(inline-block); font-style: normal; font-weight: bold; padding-right: 25px;}
     &>.main_section .tab_menu>li ul li{border-top: 1px solid $sectionBorder; padding: 15px 0; line-height: 23px;}
