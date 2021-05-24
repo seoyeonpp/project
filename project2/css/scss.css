@@ -226,6 +226,14 @@ img {
   --swiper-theme-color: $White;
 }
 
+.swiper-button-prev {
+  color: #fff;
+}
+
+.swiper-button-next {
+  color: #fff;
+}
+
 /* news */
 #news {
   height: 50px;

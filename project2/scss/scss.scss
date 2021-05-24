@@ -72,7 +72,8 @@ img{border: 0;}
 .swiper-slide>.text .main_more>a{color: $White; @include display; @extend %w100; height: 24px; background: url(../img/icon_arrow.png) no-repeat 131px 8px;}
 .swiper-container-horizontal > .swiper-pagination-bullets {bottom: 40px; left: 13px; width: 300px;}
 .swiper-pagination-bullets{--swiper-theme-color: $White;}
-
+.swiper-button-prev{color: #fff;}
+.swiper-button-next{color: #fff;}
 
 /* news */
 #news{
